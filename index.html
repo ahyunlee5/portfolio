@@ -12,43 +12,66 @@
 <body>
     <header>
         <nav class='topNav'>
-            <div class='navContainer'>
-                <ul class='topClickable'>
-                    <li>a</li>
-                </ul>
-            </div>
+            <ul class='topClickable'>
+                <li>
+                <li><a class='clickable' href='#aboutMe'>About Me</a></li>
+                <li><a class='clickable' href='#contact'>Contact</a></li>
+                <li><a class='clickable' href='#projects'>Projects</a></li>
+                <li><a class='clickable' href='https://github.com/ahyunlee5' target='_blank'>GitHub</a></li>
+                </li>
+            </ul>
         </nav>
         <div class='headerName'>
-            <h1>name</h1>
+            <h1>Alexander H. Lee</h1>
             <h3>fullStack Developer</h3>
         </div>
     </header>
     <main>
         <div class='topContainer'>
-            <div id='aboutMe'>
-                <h4 class='firstParBio'>Bio</h4>
-                <h4 class='secondParBio'>Bio2</h4>
-            </div>
-            <div class='contactContainer'>
-                <address id='contact'>
-                    <h3 class='label'>Contact Info</h3>
-                    <h3>contact</h3>
-                    <h3>contact</h3>
-                </address>
-            </div>
-        </div>
+                <div class='bioIcon'>
+                        <a href='#aboutMe'><img src='http://www.iconsalot.com/asset/icons/dinosoftlabs/banking-and-finance-7/512/010-id-card-icon.png' class='infoIcon' alt='about me icon'></a>
+                </div>
         <div class='projectContainer-1'>
             <div class='project1'>
-                <h1>project Icon</h1>
+                <a href='#projects'><img src='http://www.iconsalot.com/asset/icons/dinosoftlabs/banking-and-finance-7/512/039-portfolio-icon.png' class='projectIcon' alt='project icon'></a>
             </div>
         </div>
-        <div id='projects' class='projectContainer-2'>
-            <h1>projectssss</h1>
+    </div>
+        <div class='bottomContainer'>
+                <div id='aboutMe' class='hide'>
+                        <h4 class='firstParBio'>
+                             Hello, the name’s Alex, and I am an inquisitive fullstack developer that loves witnessing and partaking in bringing ideas to life through simple and minimalistic designs.
+                        </h4>
+                        <h4 class='secondParBio'>
+                            I am a fullstack developer currently learning through Thinkful’s FullStack Immersion bootcamp. I am eager to continually learn and expand my knowledge to implement simple yet intuitive designs. 
+                            During those times I am away from coding, you can usually find me travelling far and wide ranging from different states or countries, or to the newest or hottest restaurants at wherever I am situated. It may also be likely that I’m actually still just sitting behind a computer screen playing some games. Whatever I may be doing, I yearn for new experiences and exposures to further broaden my horizon.
+                        </h4>
+                </div>    
+        <div class='projectContainer hide'  id='projects'>
+            <div class='project1'>
+                    <a href='https://ahyunlee5.github.io/quizApp/' target='_blank'><img src='https://lh3.googleusercontent.com/jV68uNe2qjRt4xt-FaJ93CFzIVF4pqVz27FE6U8ZMFh0lEmVTRb-Eb5ChBa1AEAOMo5v9QQM8G2ciac2SzFuv_tqGetiiNPXHJbHnGa-6wL5aNbNCFac2Ufnt7NxL_MBGkOewh87Iw=w2400' class='quizImg'/></a>
+                    <div class='projectInfo'>
+                        <h5>A simple quiz generated through the use of HTML, CSS, JavaScript, and jQueryto test basic financial terminology.</h5>
+                        <h5>To give it a try simply click on the image!</h5>
+                        <span>Click =></span><a href= 'https://github.com/ahyunlee5/quizApp' target='_blank'>Repo</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='contactContainer'>
+                <address id='contact'>
+                    <h3>Contact Info:</h3>
+                    <a href='mailto:ahyunlee@umich.edu' class='contactInfo' target='_blank'>alexLee@eMail</a>
+                    <a href='tel:+1-248-808-3322' class='contactInfo' target='_blank'>alexLee@Phone</a>
+                </address>
         </div>
     </main>
     <footer>
-        <h3>blah blah blah blah</h3>
+        <div class='footer'>
+            <h3>blah blah blah blah</h3>
+        </div>
     </footer>
-    
+    <script src ='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script src='index.js'></script>
 </body>
 </html>

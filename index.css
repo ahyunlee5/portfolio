@@ -1,61 +1,128 @@
 * {
     box-sizing: border-box;
-    color: #d64309;
     font-family: 'Comfortaa', cursive;
+    color: #d64309;
+}
+.topClickable {
+    list-style: none;
 }
 .topNav {
-    border: 1px solid black;
-    font-size: 16px;
-    line-height: 20px;
-}
-.topContainer {
-    display: block;
-    border: 1px solid black;
-    float: left;
-    max-width: 50%;
-    width: 50%;
-    height: 250px;
-}
-.headerName {
-    border: 1px solid black;
-    font-family: 'Long Cang', cursive;
-    font-size: 34px;
-    line-height: 44px;
-}
-#aboutMe {
-    border: 1px solid black;
-    font-size: 20px;
-    line-height: 26px;
-}
-.label {
-    font-size: 18px;
-    line-height: 24px;
-}
-.contactContainer {
-    /* border: 1px solid black; */
-    font-size: 16px;
-    line-height: 20px;
-}
-.projectContainer-1 {
-    border: 1px solid black;
-    float: right;
-    max-width: 50%;
-    width:50%;
-    height: 250px;
-    font-size: 18px;
-    line-height: 24px;
+    display: inline-block;
+    
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin: 10px;
+
+    
+    background-color: rgba(255, 255, 255, 0.479);
 
 }
-footer {
-    border: 1px solid purple;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
+nav ul.topClickable {
+    float: right;
+    margin: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
 }
-#projects {
-    border: 1px solid black;
+.clickable {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.headerName {
+    padding-top: 150px;
+    line-height: 22px;
+
+    width: 100%;
+}
+.topContainer {
+    display: flex;
+    align-content: baseline;
+    justify-content: space-evenly;
+
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border: 2px dotted black;
+}
+#aboutMe {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+
+    border: 2px dotted black;
+}
+.infoIcon {
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    padding: 25px;
+}
+.firstParBio {
+    font-size: 18px;
+    line-height: 20px;
+}
+.secondParBio {
+    font-size: 16px;;
+    line-height: 18px;
+}
+.contactContainer {
+    border-top: 2px dotted black;
+    padding: 10px;
+}
+.contactInfo {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 12px;
+    text-decoration: none;
+}
+.projectContainer-1 {
+    max-width: 50%;
+    width: auto;
+}
+.projectIcon {
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    padding: 25px;
+
+}
+
+.bottomContainer {
+    display: inline-block;
     max-width: 100%;
     width: 100%;
-    height: 500px;
+}
+.quizImg {
+    max-width: 400px;
+    width: auto;
+    padding: 15px;
+    margin: 10px;
+}
+.projectInfo {
+    float: right;
+    font-size: 14px;
+    line-height: 16px;
+}
+footer {
+    position: absolute;
+    border-top: 1px dotted black;
+    width: 100%;
+}
+.footer {
+    text-align: center;
+}
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 1150px) {
+    .headerName {
+        text-align: center;
+    }
 }
