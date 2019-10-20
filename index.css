@@ -35,6 +35,7 @@ nav ul.topClickable {
 }
 
 .headerName {
+    padding-left: 50px;
     padding-top: 150px;
     line-height: 22px;
 
@@ -48,14 +49,14 @@ nav ul.topClickable {
     max-width: 100%;
     width: auto;
     height: auto;
-    border: 2px dotted black;
+    /* border: 1px dotted black; */
 }
 #aboutMe {
     max-width: 100%;
     width: auto;
     height: auto;
 
-    border: 2px dotted black;
+    /* border: 1px dotted black; */
 }
 .infoIcon {
     max-width: 200px;
@@ -72,18 +73,29 @@ nav ul.topClickable {
     line-height: 18px;
 }
 .contactContainer {
-    border-top: 2px dotted black;
-    padding: 10px;
+    display: flex;
+    align-content: baseline;
+    justify-content: space-evenly;
+
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    /* border-top: 1px dotted black; */
 }
-.contactInfo {
-    font-size: 16px;
-    line-height: 18px;
-    padding: 12px;
-    text-decoration: none;
+.contactIcon {
+    max-width: 100px;
+    width: auto;
+    height: auto;
+    padding: 25px;
 }
 .projectContainer-1 {
     max-width: 50%;
     width: auto;
+}
+.projectContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .projectIcon {
     max-width: 200px;
@@ -95,6 +107,7 @@ nav ul.topClickable {
 
 .bottomContainer {
     display: inline-block;
+    padding: 20px;
     max-width: 100%;
     width: 100%;
 }
@@ -103,6 +116,8 @@ nav ul.topClickable {
     width: auto;
     padding: 15px;
     margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .projectInfo {
     float: right;
@@ -111,18 +126,84 @@ nav ul.topClickable {
 }
 footer {
     position: absolute;
-    border-top: 1px dotted black;
     width: 100%;
-}
-.footer {
-    text-align: center;
 }
 .hide {
     display: none;
 }
+@media screen and (max-width: 1140px) {
+    .quizImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 45vw;
+        width: auto;
+        height: auto;
+    }
+    .projectInfo {
+        font-size: 16px;
+        text-align: center;
 
-@media screen and (max-width: 1150px) {
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .topNav{
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    nav ul.topClickable {
+        margin: 12px;
+    }
+    .clickable {
+        padding: 20px;
+        font-size: 16px;
+        line-height: 16px;
+        text-decoration: none;
+        justify-content: center;
+        align-content: center;
+    }
+    .clickable {
+        padding: 10px;
+        font-size: 3.5vw;
+        line-height: 10px;
+        text-decoration: none;
+    }
     .headerName {
         text-align: center;
+    }
+    .topContainer {
+        flex-shrink: 2;
+        
+    }
+}
+@media screen and (max-width: 450px) {
+    .infoIcon {
+        max-width: 160px;
+        width: auto;
+        height: auto;
+    }
+    .projectIcon {
+        max-width: 160px;
+        width: auto;
+        height: auto;
+    }
+}
+@media screen and (max-width: 350px) {
+    .infoIcon {
+        max-width: 120px;
+        width: auto;
+        height: auto;
+    }
+    .projectIcon {
+        max-width: 120px;
+        width: auto;
+        height: auto;
+    }
+    .contactIcon {
+        max-width: 30vw;
+        width: auto;
+        height: auto;
     }
 }
