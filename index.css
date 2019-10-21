@@ -129,7 +129,8 @@
 }
 
 .bottomContainer {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: space-evenly;
     padding: 20px;
     max-width: 100%;
     width: 100%;
@@ -152,6 +153,7 @@
 }
 .projectInfo {
     float: left;
+    padding-left: 20px;
     font-size: 14px;
     line-height: 16px;
 }
