@@ -2,15 +2,15 @@
 
 function clickInfoIcon() {
   $('.infoIcon').on('click', function() {
-    let toggledInfo = $('#aboutMe').slideToggle('hide');
-    console.log('click info');
+    return $('#aboutMe').slideToggle('hide');
+    // console.log('click info');
   });
 }
 
 function clickProjectIcon() {
   $('.projectIcon').on('click', function() {
-    let toggledProject = $('#projects').slideToggle('hide');
-    console.log('click project');
+    return $('#projects').slideToggle('hide');
+    // console.log('click project');
   });
 }
 
