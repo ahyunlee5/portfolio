@@ -228,6 +228,9 @@ footer {
     }
 }
 @media screen and (max-width: 450px) {
+    .headerName {
+        font-size: 4vw;
+    }
     .infoIcon {
         max-width: 160px;
         width: auto;
