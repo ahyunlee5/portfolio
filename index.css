@@ -140,14 +140,14 @@ nav ul.topClickable {
     width: auto;
     padding: 15px;
     margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
+
+    float: left;
 
     transform: scale(1);
     transition: .3s ease-in-out;
 }
 .projectInfo {
-    float: right;
+    float: left;
     font-size: 14px;
     line-height: 16px;
 }
@@ -181,15 +181,17 @@ footer {
 @media screen and (max-width: 1140px) {
     .quizImg {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
         max-width: 45vw;
         width: auto;
         height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
     }
     .projectInfo {
         font-size: 16px;
         text-align: center;
+        float: none;
 
     }
 }
