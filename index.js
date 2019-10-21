@@ -2,16 +2,14 @@
 
 function clickInfoIcon() {
   $('.infoIcon').on('click', function() {
-    let toggledInfo = $('#aboutMe').toggleClass('hide');
-    toggledInfo.slideToggle();
+    let toggledInfo = $('#aboutMe').slideToggle('hide');
     console.log('click info');
   });
 }
 
 function clickProjectIcon() {
   $('.projectIcon').on('click', function() {
-    let toggledProject = $('#projects').toggleClass('hide');
-    toggledProject.slideToggle();
+    let toggledProject = $('#projects').slideToggle('hide');
     console.log('click project');
   });
 }
