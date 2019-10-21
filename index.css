@@ -106,7 +106,7 @@ nav ul.topClickable {
     transform: scale(1);
     transition: .3s ease-in-out;
 }
-.projectContainer-1 {
+.topProjectContainer {
     max-width: 50%;
     width: auto;
 }
@@ -146,10 +146,24 @@ nav ul.topClickable {
     transform: scale(1);
     transition: .3s ease-in-out;
 }
+.appTitle {
+    font-size: 17px;
+    line-height: 19px;
+    text-decoration: underline;
+}
 .projectInfo {
     float: left;
     font-size: 14px;
     line-height: 16px;
+}
+.githubLink {
+    border: 1px dotted black;
+    background-color: red;
+    color: white;
+}
+.githubLink:hover {
+    color: rgb(61, 9, 9);
+    text-decoration: underline;
 }
 footer {
     position: absolute;
@@ -181,7 +195,7 @@ footer {
 @media screen and (max-width: 1140px) {
     .quizImg {
         display: block;
-        max-width: 45vw;
+        max-width: 80vw;
         width: auto;
         height: auto;
         margin-left: auto;
