@@ -138,13 +138,14 @@
 }
 
 .bottomContainer {
-    display: inline-block;
+    display: inline-flex;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 80px;
     max-width: 100%;
     width: 100%;
 }
 .projectContainer {
+    display: inline-block;
     max-width: 100%;
     width: auto;
     height: auto;
@@ -254,6 +255,11 @@ footer {
     .topContainer {
         flex-shrink: 2;
         
+    }
+}
+@media screen and (max-width: 700px) {
+    .bottomContainer {
+        padding: 20px;
     }
 }
 @media screen and (max-width: 450px) {
