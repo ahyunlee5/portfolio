@@ -102,7 +102,7 @@
 .contactContainer {
     display: flex;
     align-content: baseline;
-    justify-content: space-evenly;
+    justify-content: center;
 
     max-width: 100%;
     width: auto;
@@ -251,6 +251,7 @@ footer {
     }
     .headerName {
         text-align: center;
+        padding-left: 0;
     }
     .topContainer {
         flex-shrink: 2;
