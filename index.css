@@ -161,6 +161,23 @@
     transform: scale(1);
     transition: .3s ease-in-out;
 }
+.projectOne {
+    text-align: center;
+}
+.projectTwo {
+    text-align: center;
+}
+.yourDestination {
+    max-width: 400px;
+    width: auto;
+    padding: 15px;
+    margin: 10px;
+
+    float: left;
+
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
 .appTitle {
     font-size: 17px;
     line-height: 19px;
@@ -171,6 +188,10 @@
     padding-left: 20px;
     font-size: 14px;
     line-height: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .githubLink {
     border: 1px dotted black;
@@ -196,6 +217,9 @@
 .quizImg:hover {
     transform: scale(1.3);
 }
+.yourDestination:hover {
+    transform: scale(1.3);
+}
 .projectIcon:hover {
     background-color: red;
     transform: scale(1.3);
@@ -210,6 +234,15 @@ footer {
 }
 @media screen and (max-width: 1140px) {
     .quizImg {
+        display: block;
+        max-width: 80vw;
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .yourDestination {
         display: block;
         max-width: 80vw;
         width: auto;
